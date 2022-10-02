@@ -4,7 +4,7 @@ import os
 
 import shutil
 import logging
-from constants import ACL, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, BUCKET, IMAGE_FOLDER, IMAGE_NAME, PROCESSED_IMAGES, REGION_NAME,PDF_NAME, ROOT, UPLOAD_FOLDER, WATER_MARK_PATH
+from constants import IMAGE_FOLDER, IMAGE_NAME, PROCESSED_IMAGES,PDF_NAME, ROOT, UPLOAD_FOLDER, WATER_MARK_PATH
 from helper import checker,number, oneD_to_threeD
 import fpdf
 from pathlib import Path

@@ -11,7 +11,7 @@ from helper import checker
 
 
 import json
-from constants import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, BUCKET, IMAGE_FOLDER, PDF_NAME, REGION_NAME,ROOT
+from constants import IMAGE_FOLDER, PDF_NAME,ROOT
 from pathlib import Path
 
 

@@ -1,4 +1,4 @@
-#!/home/ridham/pdf_maker/online_pdf_maker/pdf_maker/Env_local/bin/python
+#!/home/ridham/pdf_maker/online_pdf_maker/Env_local/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
