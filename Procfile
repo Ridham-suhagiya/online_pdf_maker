@@ -1,1 +1,1 @@
-web: gunicorn pdf_maker.app:app
+web: gunicorn app:app
