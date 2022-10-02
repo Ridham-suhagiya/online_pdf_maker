@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+
+    <style>
+        body{
+            background : url("static/html.png");
+            background-color: #143F6B;
+            box-sizing: content-box;
+            margin:0;
+        }
+        
+        
+        .greetings{
+            
+            
+            padding: auto;
+            
+            display: flex;
+            
+            align-items:center;
+            justify-content: center;
+            width: fit-content;
+            
+            position:absolute;
+            
+            top: 40% ;
+            left:35%;
+
+            
+            
+
+            
+            
+            
+        }
+
+        .mask{
+            background-color: rgba(254, 251, 251, 0.318) ;
+            width: 100wh;;            
+            height: 100vh;
+            box-sizing: content-box;
+            position: relative;
+            
+            
+        
+
+        }
+       
+
+        
+        .header{
+            background-color: #E38B29;
+            font-family: monospace;
+            font-size: large;
+            color:#FDEEDC;
+            padding: 10px;
+            height: fit-content;
+            display: flex;
+            
+            justify-content: center;
+            width: fit-content; 
+           
+            border-radius: 25px;
+
+            
+
+        }
+        .button1{
+            
+            margin: auto;
+            position: absolute;
+            background-color: #E38B29;
+            color: #FDEEDC;
+            top :140%;
+            left:40%;
+            font-size : 30px; width: 50%; height: 50px;
+            cursor: pointer;
+            border-radius: 25px;    
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            transition-duration: 0.4s;
+            border-width: 0;
+        }
+
+        .button:hover{
+            background-color: rgb(107, 153, 153);
+            color :rgba(0, 0, 0, 0.626)
+        }
+
+    </style>
+</head>
+
+    <body>
+        
+        <div class = 'mask'>  
+             
+            <div class = 'greetings' style=" margin: auto;" >
+                <div class = 'header'>
+                    <h1>Make your pdf online for free !!</h1>
+                </div> 
+            
+                    
+            <input type="button" class = 'button1 button'   value = 'Click here' onclick="get_to_home()"> 
+                    
+            
+            </div>
+        </div>
+    </body>
+
+<script>
+    function get_to_home(){
+        window.location.replace("./home");
+    }
+</script>
+</html>

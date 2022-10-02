@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <title>
+      Send the images
+    </title>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <style>
+      body{
+          background : url("static/html.png");
+          background-color: #143F6B;
+          box-sizing: content-box;
+          margin:0;
+      }
+      
+      
+      .greetings{
+          
+          
+          padding: auto;
+          
+          display: flex;
+          
+          align-items:center;
+          justify-content: center;
+          width: fit-content;
+          
+          position:relative;
+          
+        
+          background-color: rgba(254, 251, 251, 0.318) ;
+          width: 100%;            
+          height: 100%;
+          
+          position: relative;
+          display: flex;    
+          font-family:Verdana, sans-serif;
+          
+
+      }
+
+      
+          
+          
+      
+
+      
+     
+
+      
+      .header{
+          background-color: #E38B29;
+          font-family: monospace;
+          font-size: large;
+          color:#FDEEDC;
+          padding: 10px;
+          height: fit-content;
+          display: flex; 
+          
+          /* justify-content: center; */
+          width: fit-content; 
+         
+          border-radius: 25px;
+          clear: right;
+          
+      }
+      .button1{
+          
+          margin: auto;
+          position: absolute;
+          background-color: #E38B29;
+          color: #FDEEDC;
+          font-size : 20px; width: fit-content + 3px; height: fit-content ;
+          cursor: pointer;
+          border-radius: 25px;   
+          transition-duration: 0.4s;
+          border-width: 0;
+          
+          
+      }
+
+      .button:hover{
+          background-color: rgb(107, 153, 153);
+          color :rgba(0, 0, 0, 0.626);
+
+      }
+
+      
+      
+     
+      
+    
+      .column{
+        float: left;
+        clear:both;
+
+      }
+      .align-down{
+        align-items: flex-end;
+      }
+      
+
+
+  </style>
+  </head>
+<body>
+
+<div class = 'greetings'>
+  <div class="row">
+    <div class =  'column header' >
+      <h1 >The input accept attribute</h1>
+    </div>
+    
+    <div  class = 'column align-down '>
+      
+      <form  method="post" enctype="multipart/form-data" >
+          <br>
+          <input class = 'button1' style="align-items:center;" type="file"  id="img" name="img" multiple='true'>
+          <br>
+          <br>
+          <input class="button button1"  type="submit"  name ='submit' value = 'submit'>
+         
+      </form>
+     
+
+    </div> 
+  </div>
+</div>  
+
+
+
+
+</body>
+</html>
