@@ -15,7 +15,6 @@ from PIL import Image
 
 class Pdf_maker:
     def __init__(self):
-        # self.bucket = boto3.resource('s3',aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key = AWS_SECRET_ACCESS_KEY,region_name=REGION_NAME)
         
         self.errors = []
 
