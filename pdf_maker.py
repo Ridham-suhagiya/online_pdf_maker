@@ -34,7 +34,7 @@ class Pdf_maker:
     
         paths = os.listdir(all_images)
         paths.sort()
-
+        print(paths)
         for i,path in enumerate(paths):
             path = os.path.join(all_images,path)
 
@@ -134,12 +134,6 @@ class Pdf_maker:
             path = UPLOAD_FOLDER
 
             pdf.output(f"{path}/{PDF_NAME}","F")
-
-            # pdf_byts =open(f"{path}/{PDF_NAME}",'rb')
-            
-           
-
-            # self.bucket.Bucket(BUCKET).put_object(Key=PDF_NAME, Body=pdf_byts, ACL=ACL)
             
             print('Pdf generation done')
 

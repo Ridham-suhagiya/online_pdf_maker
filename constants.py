@@ -1,5 +1,5 @@
 import os
-
+import logging
 
 
 IMAGE_FOLDER = 'images'
@@ -14,3 +14,4 @@ WATER_MARK_PATH = 'waterMaker/water.png'
 UPLOAD_FOLDER = 'static'
 
 ROOT = os.getcwd()
+

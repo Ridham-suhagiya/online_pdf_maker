@@ -14,7 +14,6 @@ def lambda_handler():
         logging.debug('Working fine till here')
         return True , 'Done!!'
 
-
     except Exception as ex:
 
 

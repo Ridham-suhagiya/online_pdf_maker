@@ -54,11 +54,11 @@ def home():
 
         
         for i in range(len(images)):
-            name = images[i].filename.split('.')[-1]
+            name = images[i].filename
 
             image_path = os.path.join(ROOT,IMAGE_FOLDER)
 
-            images[i].save(os.path.join(image_path, f'images{i}.' + name))
+            images[i].save(os.path.join(image_path,name))
         response,name = lambda_handler()
         if response == True:
             
