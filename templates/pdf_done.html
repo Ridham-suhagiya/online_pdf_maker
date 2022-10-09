@@ -108,10 +108,15 @@
 </head>
     
 <body>
+    <script>
+        function remove(){
+            fetch("./remove");
+        };
+    </script>
     <div class = 'greetings'>
         <div class = 'row'>
             <h1 class ='header'> Please click on the image and download the pdf</h1>
-            <a href ="static/ridhamsuhagiya.pdf" download>
+            <a href ="static/ridhamsuhagiya.pdf" download onClick="remove()">
             
                 <img src="static/pdf.png"   width="104" height="142">
             </a> 

@@ -108,11 +108,7 @@ class Pdf_maker:
     def generate_file_structure(self) -> None:
         try:
             print('Creating structure ... ')
-            
             os.mkdir(f'/{ROOT}/processed_images')
-            Path(f'/{ROOT}/static/pdf').mkdir(parents=True, exist_ok=True)
-            os.mkdir(f'/{ROOT}/static/images')
-           
         except:
             pass
             

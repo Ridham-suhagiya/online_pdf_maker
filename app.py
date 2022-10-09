@@ -28,22 +28,12 @@ def hello():
    
     return render_template('success.html')
 
-# @app.route('/remove' , methods = ['DELETE'])
-# def remove():
-#     client = boto3.client('s3',aws_access_key_id= AWS_ACCESS_KEY_ID, aws_secret_access_key = AWS_SECRET_ACCESS_KEY,region_name= REGION_NAME)
+@app.route('/remove')
+def remove():
     
-#     client.delete_object(Bucket = BUCKET, Key = PDF_NAME )
-#     headers = {
-#             'Access-Control-Allow-Origin': '*',
-#             'Access-Control-Allow-Headers': 'Content-Type',
-#             'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
-#         }
-#     response = {
-#         'statusCode': 200,
-#         'body': json.dumps('response_data'),
-#         'headers': headers
-#     }
-#     return response
+    checker('images')
+    checker('processed_images')
+    return "thankyou"
 @app.route('/home', methods=['GET','POST'])
 def home():
     
@@ -68,6 +58,8 @@ def home():
             return f'<h1> {name} </h1>'
 
     return render_template('image_input.html')
+
+
 
 if __name__ == '__main__':
     app.run()
